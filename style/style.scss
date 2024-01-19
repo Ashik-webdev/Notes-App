@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+$primaryColor: #cf9aff;
+$secondaryColor: #95c0ff;
+$thirdColor: #ffff;
+$fourthColor: #9418fd;
+$fifthColor: #571094;
+$sixthColor: #333;
+
+$fontSize1: 35px;
+$fontSize2: 16px;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, $primaryColor, $secondaryColor);
+    color: $thirdColor;
+    padding-top: 4%;
+    padding-left: 10%;
+    h1{
+        display: flex;
+        align-items: center;
+        font-size: $fontSize1;
+        font-weight: 600;
+        img{
+            width: 60px;
+        }
+    }
+    button{
+        display: flex;
+        align-items: center;
+        background: linear-gradient($fourthColor, $fifthColor);
+        color: $thirdColor;
+        font-size: $fontSize2;
+        outline: 0;
+        border: 0;
+        border-radius: 40px;
+        padding: 15px 25px;
+        margin: 30px 0 20px;
+        cursor: pointer;
+        img{
+            width: 25px;
+            margin-right: 8px;
+        }
+    }
+    .notes-container{
+        .input-box{
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            min-height: 150px;
+            background: $thirdColor;
+            color: $sixthColor;
+            padding: 20px;
+            margin: 20px 0;
+            outline: none;
+            border-radius: 5px;
+            img{
+                width: 25px;
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}
